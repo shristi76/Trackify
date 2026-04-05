@@ -1,16 +1,12 @@
-/* ================= RESET ================= */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html,body{
     height: 100%;
     width: 100%;
 }
-
-/* ================= VARIABLES ================= */
 :root{
     --bg-color:rgb(2, 1, 1);
     --text-color:white;
@@ -31,8 +27,6 @@ html,body{
     --border-radius-m:10px;
     --border-radius-l:15px;
 }
-
-/* ================= BASE ================= */
 body{
     background-color: var(--bg-color);
     color:var(--text-color);
@@ -44,13 +38,9 @@ main{
     display: flex;
     flex-direction: column;
 }
-
-/* ================= GLOBAL HOVER ================= */
 button, .task, .task-col, nav, .modal .center {
     transition: all 0.3s ease;
 }
-
-/* ================= NAV ================= */
 nav{
     padding:var(--nav-padding);
     display: flex;
@@ -58,9 +48,6 @@ nav{
     justify-content: space-between;
     background-color: red;
 }
-
-
-
 nav button{
     background-color: var(--bg-button-color);
     border: none;
@@ -69,21 +56,16 @@ nav button{
     cursor: pointer;
     border-radius: var(--border-radius-m);
 }
-
 nav button:hover{
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 }
-
-/* ================= BOARD ================= */
 section{
     padding:var(--section-padding);
     display: flex;
     flex-grow: 1;
     gap:var(--padding-l);
 }
-
-/* ================= COLUMN ================= */
 .task-col{
     background-color: var(--bg-col-color);
     display: flex;
@@ -93,22 +75,15 @@ section{
     gap:var(--padding-m);
     border-radius: var(--border-radius-m);
 }
-
-
-
 .task-col.hover-over{
     border: 2px dashed #fdfffddd;
     transform: scale(1.02);
 }
-
-/* ================= COLUMN HEADER ================= */
 .heading{
     display: flex;
     justify-content: space-between;
     font-weight: bold;
 }
-
-/* ================= TASK ================= */
 .task{
     background-color:var(--bg-task-color);
     padding:var(--padding-m);
@@ -118,7 +93,6 @@ section{
     gap:var(--padding-m);
     cursor: grab;
 }
-
 .task:hover{
     transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0,0,0,0.5);
@@ -128,8 +102,6 @@ section{
     cursor: grabbing;
     transform: scale(0.98);
 }
-
-/* TASK BUTTON */
 .task button{
     align-self: flex-end;
     cursor: pointer;
@@ -144,8 +116,6 @@ section{
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
-
-/* ================= MODAL ================= */
 .modal{
     padding: var(--padding-l);
     position: fixed;
@@ -158,16 +128,12 @@ section{
 .modal.active{
     display:flex;
 }
-
-/* BACKGROUND */
 .modal .bg{
     position: absolute;
     inset:0;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(8px);
 }
-
-/* ================= GLASS EFFECT ================= */
 .modal .center{
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(15px);
@@ -185,10 +151,6 @@ section{
 
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
 }
-
-
-
-/* ================= INPUT ================= */
 .modal input,
 .modal textarea{
     background-color: rgba(255,255,255,0.05);
@@ -198,8 +160,6 @@ section{
     padding: var(--padding-m);
     border-radius: var(--border-radius-m);
 }
-
-/* ================= MODAL BUTTON ================= */
 .modal button{
     background-color: rgba(255, 49, 80, 0.8);
     border:none;
@@ -212,7 +172,6 @@ section{
     padding: var(--padding-l);
 
 }
-
 .modal button:hover{
     background-color: rgb(125, 248, 10);
     color: rgb(11, 9, 9);

@@ -73,6 +73,45 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("tasks", JSON.stringify(data));
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
  //localstorage
     function loadTasks() {
         const saved = JSON.parse(localStorage.getItem("tasks"));
@@ -102,6 +141,76 @@ document.addEventListener("DOMContentLoaded", () => {
     closeBg.onclick = () => modal.classList.remove("active");
 
    //add taskk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     addBtn.onclick = () => {
         const titleInput = document.getElementById("task-title-input");
         const descInput = document.getElementById("task-description-input");
